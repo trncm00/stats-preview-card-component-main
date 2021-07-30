@@ -1,38 +1,57 @@
-* {
-  box-sizing: content-box;
-
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-  background-color: white;
+  background-color: hsl(233, 47%, 7%);
   font-size: 15px;
+  width: 1440px;
+}
+div {
+  margin: 5px;
+  padding: 5px;
 }
 .flex-container {
-  width: 1440px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
   background-color: hsl(244, 38%, 16%);
   color: hsl(0, 0%, 100%);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  margin: 25% 10% 25% 10%;
 }
-.flex-items {
-  align-items: center;
-  padding: 32px;
-}
+
 h1 {
   font-weight: 700;
 }
-
 .hero-image {
-  color: hsl(277, 64%, 61%);
+  width: 720px;
+  align-self: stretch;
+}
 
 /*
+.hero-image {
+  align-items: stretch;
+  align-self: flex-end;
+}
+img {
+  width: 25%;
+}
+
+
 
 .flex-container {
   background-color: red;
   width: 1470px;
-  display: flex;
-  flex-direction: column;
+ display: flex;
+  flex-flow: column wrap;
   align-items: space-around;
+}
+
+.flex-items {
+  align-items: baseline;
+  align-content: space-between;
 }
 img {
   float: right;
@@ -47,7 +66,7 @@ img {
 
 .grid-ctr {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
 }
 body {
