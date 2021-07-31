@@ -6,28 +6,34 @@ html {
 body {
   background-color: hsl(233, 47%, 7%);
   font-size: 15px;
-  width: 1440px;
 }
 div {
   margin: 5px;
   padding: 5px;
 }
-.flex-container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-
-  background-color: hsl(244, 38%, 16%);
-  color: hsl(0, 0%, 100%);
-  margin: 25% 10% 25% 10%;
-}
 
 h1 {
   font-weight: 700;
 }
+
+section {
+  margin: 25% 10% 25% 10%;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+
+  background-color: hsl(244, 38%, 16%);
+  color: hsl(0, 0%, 100%);
+}
+.flex-items {
+  padding: 10px;
+}
+
 .hero-image {
   width: 720px;
-  align-self: stretch;
 }
 
 /*
