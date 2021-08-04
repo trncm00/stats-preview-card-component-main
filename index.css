@@ -1,42 +1,70 @@
 html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: content-box;
+  margin: 30px;
+  padding: 30px;
 }
 body {
   background-color: hsl(233, 47%, 7%);
+
   font-size: 15px;
 }
-div {
-  margin: 5px;
-  padding: 5px;
-}
 
-h1 {
-  font-weight: 700;
-}
-
-section {
+.card_style {
+  width: 720px;
+  height: 446px;
+  background-color: hsl(244, 38%, 16%);
   margin: 25% 10% 25% 10%;
 }
 
 .flex-container {
   display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
-
-  background-color: hsl(244, 38%, 16%);
+  flex-flow: row nowrap;
+  /* width: 1440px; */
   color: hsl(0, 0%, 100%);
 }
 .flex-items {
-  padding: 10px;
+  padding: 0px;
+  /* margin: 30px; */
+  inline-size: 360px;
+  justify-content: center;
 }
-
 .hero-image {
   width: 720px;
+  /*align-self: stretch*/
+  flex-basis: 50%;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  kerning: auto;
+}
+p {
+  font-weight: 200;
+  font-family: "Inter", sans-serif;
+}
+ul > li {
+  text-transform: capitalize;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+
+  padding: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+ul {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /*
+
+div {
+  margin: 5px;
+  padding: 5px;
+  padding-left: 50px;
+}
 .hero-image {
   align-items: stretch;
   align-self: flex-end;
