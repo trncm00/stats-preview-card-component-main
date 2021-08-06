@@ -41,7 +41,6 @@ body {
 .flex-items {
   padding-left: 50px;
 
-  /* margin: 30px; */
   inline-size: 360px;
 }
 .hero-image {
@@ -61,16 +60,17 @@ h1 {
   font-family: "Inter", sans-serif;
 }
 
-p {
-  font-family: "Inter", sans-serif;
+div > p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
   line-height: 150%;
 }
 
 span {
   color: hsla(0, 0%, 100%, 0.6);
-  font-weight: 400;
+  font-weight: 100;
   font-family: "Inter", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 1.25px;
 }
 
 ul {
