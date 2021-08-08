@@ -4,14 +4,15 @@ html {
   padding: 0px;
 }
 body {
+  margin: 0px;
   background-color: hsl(233, 47%, 7%);
-  width: 1440px;
+  max-width: 1440px;
   font-size: 15px;
 }
 
 .color-overlay {
-  background-color: hsl(277, 64%, 61%, 0.5);
-  z-index: 2;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.5;
 }
 
 .card_style {
@@ -28,16 +29,18 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-
   color: hsl(0, 0%, 100%);
+  flex-basis: 50%;
 }
 .flex-items {
   padding-left: 50px;
-
   inline-size: 360px;
+  flex-basis: 50%;
 }
 .hero-image {
-  flex-basis: 50%;
+  display: block;
+  max-width: 100%;
+  background-image: url(images/image-header-desktop.jpg);
 }
 
 .text-style {
