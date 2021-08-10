@@ -8,6 +8,8 @@
   
   <title>Frontend Mentor | Stats preview card component</title>
   <link href="index.css" type="text/css" rel = "stylesheet"/>
+  <link href="mobile.css" type="text/css" rel="stylesheet" media="screen and (min-width:320px) and (max-width:480px)" />
+
  
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +19,14 @@
 <body> 
 <main>
   <!-- the card, display flex -->
-  <div class = "card_style flex-container">
+  <div class = "card_style flex-container mobile_flex_container mobile_card_style">
     <!-- text, flex basis fifty percent on desktop  -->
     <div>
-      <h1 class ="flex-items text-style">
+      <h1 class ="flex-items text-style mobile_flex-items">
         Get <span class ="text-accent">insights</span> that help your business grow.
       
       </h1>
-      <p class ="flex-items text-style">
+      <p class ="flex-items text-style mobile_flex-items">
         Discover the benefits of data analytics and make better decisions regarding revenue, customer
         experience, and overall efficiency.
       </p>
@@ -33,11 +35,11 @@
       <ul >
         <li>10k+ <span>companies</span></li>
         <li>314 <span>templates</span></li>
-        <li>12m+ <span>queries</span></li>
+        <li>12M+ <span>queries</span></li>
       </ul>
     </div>
       <!--for the image, flex-basis 50 percent on desktop-->
-      <div class="color-overlay hero-image flex-items">
+      <div class="color-overlay hero-image mobile_hero-image flex-items mobile_flex-items">
         <img  src="" >
       </div>
   </div>
