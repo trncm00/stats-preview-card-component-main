@@ -12,14 +12,15 @@ body {
 }
 
 .color-overlay {
-  background-color: hsl(277, 64%, 61%);
+  background-color: hsla(277, 83%, 60%, 0.15);
+  mix-blend-mode: screen;
 }
 .hero-image {
   max-width: 100%;
-  background-image: url(images/image-header-desktop.jpg);
+  background-image: url("images/image-header-desktop.jpg");
   background-size: cover;
 
-  opacity: 0.15;
+  opacity: 0.25;
   flex-basis: 50%;
   border-radius: 0px 10px 10px 0px;
 }
